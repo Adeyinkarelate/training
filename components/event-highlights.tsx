@@ -60,9 +60,9 @@ export function EventHighlights() {
   ];
 
   return (
-    <MotionSection id="event" className="scroll-mt-24 px-4 py-24 sm:px-6">
-      <div className="mx-auto max-w-6xl">
-        <div className="max-w-2xl">
+    <MotionSection id="event" className="scroll-mt-24 w-full min-w-0 px-4 py-24 sm:px-6">
+      <div className="mx-auto w-full min-w-0 max-w-6xl">
+        <div className="mx-auto max-w-2xl text-center sm:mx-0 sm:text-left">
           <span className="eyebrow">{"// the essentials"}</span>
           <h2 className="text-fluid-section mt-3 text-balance font-semibold tracking-tight text-[var(--fg-strong)]">
             Event details.
@@ -91,8 +91,8 @@ export function EventHighlights() {
           ))}
         </MotionStagger>
 
-        <div className="mt-10 flex flex-col items-start gap-4 rounded-2xl border border-[var(--border)] bg-[var(--surface-card)] p-5 sm:flex-row sm:items-center sm:justify-between">
-          <div className="min-w-0 flex-1">
+        <div className="mt-10 flex flex-col items-center gap-4 rounded-2xl border border-[var(--border)] bg-[var(--surface-card)] p-5 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
+          <div className="min-w-0 w-full flex-1 sm:text-left">
             <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--fg-subtle)]">
               google-meet://invite
             </p>
@@ -100,7 +100,9 @@ export function EventHighlights() {
               {MEET_INVITE_URL}
             </p>
           </div>
-          <CopyInviteButton />
+          <div className="shrink-0 sm:self-auto">
+            <CopyInviteButton />
+          </div>
         </div>
       </div>
     </MotionSection>

@@ -36,9 +36,9 @@ const RegistrationSection = dynamic(
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen min-w-0 bg-[var(--bg)]">
+    <div className="relative min-h-screen min-w-0 overflow-x-clip bg-[var(--bg)]">
       <SiteHeader />
-      <main id="main-content" className="min-h-screen" tabIndex={-1}>
+      <main id="main-content" className="min-h-screen w-full min-w-0" tabIndex={-1}>
         <Hero />
         <ProgramOverview />
         <EventHighlights />

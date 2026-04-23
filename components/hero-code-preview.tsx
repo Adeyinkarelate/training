@@ -21,7 +21,7 @@ export function HeroCodePreview() {
 
   return (
     <motion.div
-      className="relative mx-auto w-full max-w-xl lg:mx-0 lg:max-w-none"
+      className="relative mx-auto w-full min-w-0 max-w-xl lg:mx-0 lg:max-w-none"
       initial={{ opacity: 0, y: 32, scale: 0.97 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
@@ -29,8 +29,10 @@ export function HeroCodePreview() {
         prefersReducedMotion ? undefined : { y: -4, transition: { duration: 0.3 } }
       }
     >
-      <div className="code-preview-glow" aria-hidden />
-      <div className="code-preview">
+      {/* Contain glow blur + wide code line overflow so the column never widens the viewport on small screens. */}
+      <div className="relative min-w-0 overflow-hidden rounded-[1.25rem]">
+        <div className="code-preview-glow" aria-hidden />
+        <div className="code-preview">
         {/* Window chrome */}
         <div className="flex items-center justify-between border-b border-white/10 bg-white/[0.03] px-4 py-2.5">
           <div className="flex items-center gap-1.5">
@@ -62,7 +64,7 @@ export function HeroCodePreview() {
         </div>
 
         {/* Code body */}
-        <div className="flex text-[12.5px] leading-[1.65] sm:text-[13px]">
+        <div className="flex min-w-0 text-[12.5px] leading-[1.65] sm:text-[13px]">
           <div
             className="select-none border-r border-white/5 px-3 py-4 text-right font-mono text-slate-600"
             aria-hidden
@@ -72,7 +74,7 @@ export function HeroCodePreview() {
             ))}
           </div>
 
-          <pre className="flex-1 overflow-x-auto px-4 py-4 font-mono text-slate-200">
+          <pre className="min-w-0 flex-1 overflow-x-auto px-4 py-4 font-mono text-slate-200">
             <code>
               <Line>
                 <Kw>import</Kw> <Var>{"{ Hero, Button }"}</Var> <Kw>from</Kw>{" "}
@@ -144,6 +146,7 @@ export function HeroCodePreview() {
             ))}
           </div>
           <span className="hidden sm:inline">Ln 10, Col 22 · UTF-8 · TSX</span>
+        </div>
         </div>
       </div>
 

@@ -29,9 +29,9 @@ const cards = [
 
 export function ProgramOverview() {
   return (
-    <MotionSection id="learn" className="scroll-mt-24 px-4 py-24 sm:px-6">
-      <div className="mx-auto max-w-6xl">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+    <MotionSection id="learn" className="scroll-mt-24 w-full min-w-0 px-4 py-24 sm:px-6">
+      <div className="mx-auto w-full min-w-0 max-w-6xl">
+        <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
           <div className="max-w-2xl">
             <span className="eyebrow">{"// curriculum"}</span>
             <h2 className="text-fluid-section mt-3 text-balance font-semibold tracking-tight text-[var(--fg-strong)]">

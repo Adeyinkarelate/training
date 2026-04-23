@@ -14,12 +14,12 @@ const stats = [
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden px-4 pb-24 pt-28 sm:px-6 sm:pb-32 sm:pt-36">
+    <section className="relative w-full min-w-0 overflow-hidden px-4 pb-24 pt-28 sm:px-6 sm:pb-32 sm:pt-36">
       <div className="hero-grid -z-20" aria-hidden />
       <div className="hero-mesh -z-20" aria-hidden />
 
-      <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-14">
-        <div className="text-center lg:text-left">
+      <div className="mx-auto grid w-full min-w-0 max-w-6xl gap-14 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-14">
+        <div className="min-w-0 text-center lg:text-left">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
