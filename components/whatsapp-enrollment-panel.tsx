@@ -34,7 +34,9 @@ export function WhatsAppEnrollmentPanel() {
           </span>
         </div>
 
-        <h3 className="mt-5 text-xl font-semibold tracking-tight text-[var(--fg-strong)]">{WHATSAPP_GROUP_LABEL}</h3>
+        <h3 className="text-fluid-card-title mt-5 font-semibold tracking-tight text-[var(--fg-strong)]">
+          {WHATSAPP_GROUP_LABEL}
+        </h3>
         <p className="mt-1 text-sm text-[var(--fg-muted)]">WhatsApp group</p>
 
         <div className="relative mt-8 w-full max-w-[220px] sm:max-w-[260px]">

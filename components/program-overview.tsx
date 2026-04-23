@@ -33,11 +33,11 @@ export function ProgramOverview() {
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
-            <span className="eyebrow">// curriculum</span>
-            <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight text-[var(--fg-strong)] sm:text-4xl">
+            <span className="eyebrow">{"// curriculum"}</span>
+            <h2 className="text-fluid-section mt-3 text-balance font-semibold tracking-tight text-[var(--fg-strong)]">
               What you’ll actually build.
             </h2>
-            <p className="mt-4 text-pretty text-lg text-[var(--fg-muted)]">
+            <p className="text-fluid-lead mt-4 text-pretty text-[var(--fg-muted)]">
               Outcomes, not theory slides. Walk away with workflows you can reuse on
               paid client work or your next product idea.
             </p>
@@ -59,7 +59,7 @@ export function ProgramOverview() {
                   {card.tag}
                 </span>
               </div>
-              <h3 className="mt-6 text-xl font-semibold tracking-tight text-[var(--fg-strong)]">
+              <h3 className="text-fluid-card-title mt-6 font-semibold tracking-tight text-[var(--fg-strong)]">
                 {card.title}
               </h3>
               <p className="mt-3 text-[15px] leading-relaxed text-[var(--fg-muted)]">

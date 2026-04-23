@@ -48,7 +48,7 @@ export function HeroCodePreview() {
         </div>
 
         {/* Tab strip */}
-        <div className="flex items-center border-b border-white/5 bg-white/[0.02] text-[11px]">
+        <div className="flex min-h-[2.25rem] items-center overflow-x-auto overflow-y-hidden border-b border-white/5 bg-white/[0.02] text-[11px] [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <div className="flex items-center gap-2 border-b-2 border-cyan-400 bg-white/[0.03] px-3 py-1.5 font-mono text-slate-200">
             <span className="text-cyan-400">●</span>
             <span>page.tsx</span>
@@ -76,12 +76,12 @@ export function HeroCodePreview() {
             <code>
               <Line>
                 <Kw>import</Kw> <Var>{"{ Hero, Button }"}</Var> <Kw>from</Kw>{" "}
-                <Str>"@stack/ui"</Str>
+                <Str>{'"@stack/ui"'}</Str>
                 <Pun>;</Pun>
               </Line>
               <Line>
                 <Kw>import</Kw> <Var>{"{ deploy }"}</Var> <Kw>from</Kw>{" "}
-                <Str>"@ai/cloud"</Str>
+                <Str>{'"@ai/cloud"'}</Str>
                 <Pun>;</Pun>
               </Line>
               <Line>&nbsp;</Line>
@@ -99,12 +99,12 @@ export function HeroCodePreview() {
                 <Tag>&lt;Hero</Tag>{" "}
                 <Prop>title</Prop>
                 <Pun>=</Pun>
-                <Str>"Build without friction"</Str>
+                <Str>{'"Build without friction"'}</Str>
               </Line>
               <Line indent={3}>
                 <Prop>accent</Prop>
                 <Pun>=</Pun>
-                <Str>"cyan-violet"</Str>
+                <Str>{'"cyan-violet"'}</Str>
                 <Tag>&gt;</Tag>
               </Line>
               <Line indent={3}>

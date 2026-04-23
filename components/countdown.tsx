@@ -45,10 +45,13 @@ export function Countdown() {
         />
         {done ? "We’re live — join the Meet" : "Cohort starts in"}
       </p>
-      <div className="mt-4 inline-flex max-w-full divide-x divide-[var(--border)] overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface-card)] backdrop-blur-md">
+      <div className="mx-auto mt-4 grid w-full max-w-[min(100%,20rem)] grid-cols-4 divide-x divide-[var(--border)] overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface-card)] backdrop-blur-md lg:mx-0 lg:max-w-none lg:inline-flex lg:w-auto">
         {cells.map((c) => (
-          <div key={c.label} className="min-w-[72px] px-4 py-3 text-center sm:min-w-[88px] sm:px-5 sm:py-4">
-            <p className="tabular font-mono text-2xl font-semibold tracking-tight text-[var(--fg-strong)] sm:text-3xl">
+          <div
+            key={c.label}
+            className="min-w-0 px-2 py-3 text-center sm:px-4 sm:py-4 lg:min-w-[88px] lg:px-5"
+          >
+            <p className="text-fluid-stat tabular font-mono font-semibold tracking-tight text-[var(--fg-strong)]">
               {pending
                 ? "—"
                 : done

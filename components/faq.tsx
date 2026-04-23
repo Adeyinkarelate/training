@@ -26,11 +26,11 @@ export function Faq() {
   return (
     <MotionSection id="faq" className="scroll-mt-24 px-4 py-24 sm:px-6">
       <div className="mx-auto max-w-3xl">
-        <span className="eyebrow">// questions</span>
-        <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight text-[var(--fg-strong)] sm:text-4xl">
+        <span className="eyebrow">{"// questions"}</span>
+        <h2 className="text-fluid-section mt-3 text-balance font-semibold tracking-tight text-[var(--fg-strong)]">
           Frequently asked.
         </h2>
-        <p className="mt-4 text-pretty text-lg text-[var(--fg-muted)]">
+        <p className="text-fluid-lead mt-4 text-pretty text-[var(--fg-muted)]">
           Quick answers before you enroll.
         </p>
 
@@ -76,7 +76,7 @@ export function Faq() {
                       transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
                       className="overflow-hidden"
                     >
-                      <p className="border-t border-[var(--border)] px-6 pb-5 pl-14 pt-4 text-sm leading-relaxed text-[var(--fg-muted)]">
+                      <p className="border-t border-[var(--border)] px-4 pb-5 pt-4 text-sm leading-relaxed text-[var(--fg-muted)] sm:px-6 sm:pl-14">
                         {item.a}
                       </p>
                     </motion.div>

@@ -42,6 +42,18 @@
   --surface-elevated: var(--bg-elevated);
   --glow-1: var(--accent-glow);
   --glow-2: var(--accent-glow-2);
+
+  /* Fluid type — scales smoothly ~320px–1200px (vi = viewport inline size) */
+  --text-hero: clamp(2rem, 1.15rem + 4.25vi, 3.4375rem);
+  --leading-hero: 1.05;
+  --text-section: clamp(1.6875rem, 1.42rem + 1.15vi, 2.25rem);
+  --leading-section: 1.15;
+  --text-lead: clamp(1.0625rem, 0.98rem + 0.35vi, 1.1875rem);
+  --leading-lead: 1.65;
+  --text-stat: clamp(1.375rem, 1.12rem + 1.05vi, 1.875rem);
+  --leading-stat: 1.1;
+  --text-price: clamp(1.75rem, 1.35rem + 1.85vi, 2rem);
+  --text-card-title: clamp(1.125rem, 1.02rem + 0.42vi, 1.375rem);
 }
 
 /* ---------- Base ---------- */
@@ -59,6 +71,13 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+@supports not (overflow: clip) {
+  html {
+    overflow-x: hidden;
+  }
 }
 
 ::selection {
@@ -79,6 +98,36 @@ html {
   }
   .tabular {
     font-variant-numeric: tabular-nums;
+  }
+
+  .text-fluid-hero {
+    font-size: var(--text-hero);
+    line-height: var(--leading-hero);
+  }
+
+  .text-fluid-section {
+    font-size: var(--text-section);
+    line-height: var(--leading-section);
+  }
+
+  .text-fluid-lead {
+    font-size: var(--text-lead);
+    line-height: var(--leading-lead);
+  }
+
+  .text-fluid-stat {
+    font-size: var(--text-stat);
+    line-height: var(--leading-stat);
+  }
+
+  .text-fluid-price {
+    font-size: var(--text-price);
+    line-height: var(--leading-stat);
+  }
+
+  .text-fluid-card-title {
+    font-size: var(--text-card-title);
+    line-height: var(--leading-section);
   }
 }
 

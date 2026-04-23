@@ -9,7 +9,7 @@ export default function NotFound() {
       <p className="font-mono text-xs uppercase tracking-[0.24em] text-[var(--accent)]">
         error · 404
       </p>
-      <h1 className="mt-3 text-center text-3xl font-semibold tracking-tight text-[var(--fg-strong)] sm:text-4xl">
+      <h1 className="text-fluid-section mt-3 text-center font-semibold tracking-tight text-[var(--fg-strong)]">
         <span className="gradient-text">Page not found.</span>
       </h1>
       <p className="mt-3 max-w-md text-center text-[var(--fg-muted)]">

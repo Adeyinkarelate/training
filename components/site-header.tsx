@@ -74,8 +74,8 @@ export function SiteHeader() {
             >
               <span className="font-mono">{"</>"}</span>
             </motion.span>
-            <span className="flex flex-col leading-none">
-              <span className="text-sm font-semibold tracking-tight text-[var(--fg)]">
+            <span className="min-w-0 flex flex-col leading-none">
+              <span className="truncate text-sm font-semibold tracking-tight text-[var(--fg)]">
                 Full-Stack AI Lab
               </span>
               <span className="mt-0.5 hidden font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--fg-subtle)] sm:block">

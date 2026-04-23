@@ -26,7 +26,7 @@ export function Hero() {
             transition={{ duration: 0.5 }}
             className="flex justify-center lg:justify-start"
           >
-            <span className="chip">
+            <span className="chip max-w-full flex-wrap justify-center">
               <span className="chip-dot" aria-hidden />
               <span className="text-[var(--fg)]">Live cohort</span>
               <span className="text-[var(--fg-subtle)]" aria-hidden>
@@ -44,7 +44,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-6 text-balance text-4xl font-semibold tracking-tight text-[var(--fg-strong)] sm:text-5xl md:text-[3.4rem] md:leading-[1.05]"
+            className="text-fluid-hero mt-6 text-balance font-semibold tracking-tight text-[var(--fg-strong)]"
           >
             Build full-stack web apps{" "}
             <span className="gradient-text">at the speed of thought.</span>
@@ -54,7 +54,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 0.16 }}
-            className="mx-auto mt-6 max-w-xl text-pretty text-base text-[var(--fg-muted)] sm:text-lg lg:mx-0"
+            className="text-fluid-lead mx-auto mt-6 max-w-xl text-pretty text-[var(--fg-muted)] lg:mx-0"
           >
             A two-day intensive for curious minds. Ship real, production-grade
             websites using modern AI-powered workflows — no prior coding needed.
@@ -97,7 +97,7 @@ export function Hero() {
                 <dt className="font-mono text-[11px] uppercase tracking-widest text-[var(--fg-subtle)]">
                   {s.label}
                 </dt>
-                <dd className="mt-1 text-2xl font-semibold tracking-tight text-[var(--fg-strong)] sm:text-3xl">
+                <dd className="text-fluid-stat mt-1 font-semibold tracking-tight text-[var(--fg-strong)]">
                   {s.value}
                 </dd>
               </div>

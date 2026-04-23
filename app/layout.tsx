@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/providers";
@@ -19,6 +19,12 @@ const jetbrains = JetBrains_Mono({
 
 const siteMetadataBase = resolveSiteMetadataBase();
 const siteUrl = siteMetadataBase.href.replace(/\/$/, "");
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#06080f",
+};
 
 export const metadata: Metadata = {
   metadataBase: siteMetadataBase,
@@ -64,7 +70,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className={`${inter.variable} ${jetbrains.variable} min-h-screen antialiased`}
+        className={`${inter.variable} ${jetbrains.variable} min-h-screen overflow-x-hidden antialiased`}
         suppressHydrationWarning
       >
         <a

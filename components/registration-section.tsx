@@ -33,11 +33,11 @@ export function RegistrationSection() {
 
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow justify-center">// enroll</span>
-          <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight text-[var(--fg-strong)] sm:text-4xl">
+          <span className="eyebrow justify-center">{"// enroll"}</span>
+          <h2 className="text-fluid-section mt-3 text-balance font-semibold tracking-tight text-[var(--fg-strong)]">
             Pay, join, and you&apos;re in.
           </h2>
-          <p className="mt-4 text-pretty text-lg text-[var(--fg-muted)]">
+          <p className="text-fluid-lead mt-4 text-pretty text-[var(--fg-muted)]">
             Transfer tuition to the school account below. When payment is complete, join the WhatsApp group and share your
             receipt so we can confirm your seat.
           </p>
@@ -57,7 +57,7 @@ export function RegistrationSection() {
                   </span>
                 </div>
 
-                <h3 className="mt-5 text-lg font-semibold text-[var(--fg-strong)]">School account</h3>
+                <h3 className="text-fluid-card-title mt-5 font-semibold text-[var(--fg-strong)]">School account</h3>
                 <p className="mt-1 text-sm text-[var(--fg-muted)]">
                   Use your banking app to send the exact tuition amount. Keep your debit alert or receipt handy for the
                   group.
@@ -90,7 +90,7 @@ export function RegistrationSection() {
                   ) : null}
                   <div>
                     <dt className="font-mono text-[10px] uppercase tracking-widest text-[var(--fg-subtle)]">Tuition</dt>
-                    <dd className="mt-1.5 text-3xl font-semibold tabular tracking-tight text-[var(--fg-strong)]">
+                    <dd className="text-fluid-price mt-1.5 font-semibold tabular tracking-tight text-[var(--fg-strong)]">
                       {formatted}
                     </dd>
                   </div>

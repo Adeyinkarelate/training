@@ -41,11 +41,11 @@ export function Testimonials() {
       <div className="section-divider mx-auto max-w-6xl" aria-hidden />
       <div className="mx-auto mt-16 max-w-6xl">
         <div className="max-w-2xl">
-          <span className="eyebrow">// voices</span>
-          <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight text-[var(--fg-strong)] sm:text-4xl">
+          <span className="eyebrow">{"// voices"}</span>
+          <h2 className="text-fluid-section mt-3 text-balance font-semibold tracking-tight text-[var(--fg-strong)]">
             What past participants say.
           </h2>
-          <p className="mt-4 text-pretty text-lg text-[var(--fg-muted)]">
+          <p className="text-fluid-lead mt-4 text-pretty text-[var(--fg-muted)]">
             Placeholder quotes for layout — swap with real stories anytime.
           </p>
         </div>

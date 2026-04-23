@@ -63,11 +63,11 @@ export function EventHighlights() {
     <MotionSection id="event" className="scroll-mt-24 px-4 py-24 sm:px-6">
       <div className="mx-auto max-w-6xl">
         <div className="max-w-2xl">
-          <span className="eyebrow">// the essentials</span>
-          <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight text-[var(--fg-strong)] sm:text-4xl">
+          <span className="eyebrow">{"// the essentials"}</span>
+          <h2 className="text-fluid-section mt-3 text-balance font-semibold tracking-tight text-[var(--fg-strong)]">
             Event details.
           </h2>
-          <p className="mt-4 text-pretty text-lg text-[var(--fg-muted)]">
+          <p className="text-fluid-lead mt-4 text-pretty text-[var(--fg-muted)]">
             Everything you need to join us live — with a recording backup for
             when life happens.
           </p>
